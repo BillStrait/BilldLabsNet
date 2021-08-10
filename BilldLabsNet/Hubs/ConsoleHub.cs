@@ -14,6 +14,13 @@ namespace BilldLabsNet.Hubs
             if(string.Equals(command, "white rabbit", StringComparison.OrdinalIgnoreCase))
             {
                 response = "How deep does the rabbit hole go?";
+                Clients.CallerState.whiteRabbit = true;
+            }
+
+            if(Clients.CallerState.whiteRabbit != null && Clients.CallerState.whiteRabbit == true && string.Equals(command, "old man leg"))
+            {
+                response = "You must be Andrew because no one else knows how to find this.";
+                Clients.CallerState.oldManLeg = true;
             }
             Clients.Caller.updateResponse(response);
         }
