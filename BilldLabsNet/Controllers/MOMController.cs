@@ -19,7 +19,7 @@ namespace BilldLabsNet.Controllers
         // GET: MOM
         public ActionResult Index()
         {
-            var helper = new MOMHelper();
+            var helper = new MomHelper();
             var vm = helper.GetVm();
 
 

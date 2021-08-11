@@ -1,0 +1,23 @@
+﻿@model BilldLabsNet.Models.MoM.MOMVM
+
+@{
+    ViewBag.Title = "Which is colder, Mars or Minneapolis?";
+}
+
+@Styles.Render("~/Content/MOM/custom.css")
+
+<h2>Is it colder in Minneapolis, Minnesota or in the Gale Crater on Mars?</h2>
+<br />
+<span id="mspTemp">Minneapolis' High is @Model.MSPHigh°F</span> <span id="marsTemp">Mars' High is @Model.MarsHigh°F</span>
+<br />
+<div id="answerWrapper"><span id="answer">The colder place is:</span><br /><span id="coldestPlace">@Model.ColdestPlace!</span></div>
+
+<br />
+<hr />
+
+@*<img id="factPic" src="@Model.ImageUri" alt="@Model.ImageAltText" height="@Model.ImageHeight" width="@Model.ImageWidth" />
+    <p id="factText">@Model.Fact</p>
+    <hr />*@
+
+
+<footer><small id="footerText">MarsOrMinneapolis.com is powered by <a href="http://cab.inta-csic.es/rems/">Centro de Astrobiologia</a> and <a href="http://www.openweathermaps.com">OpenWeatherMaps</a></small></footer>

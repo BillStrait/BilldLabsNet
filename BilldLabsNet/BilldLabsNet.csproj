@@ -161,6 +161,7 @@
     <Compile Include="Models\MoM\Fact.cs" />
     <Compile Include="Models\MoM\MarsWeather.cs" />
     <Compile Include="Models\MoM\MOMVM.cs" />
+    <Compile Include="Models\MoM\OWM.cs" />
     <Compile Include="Models\MoM\REMS.cs" />
     <Compile Include="Models\MoM\WUndergroundData.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -203,10 +204,10 @@
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Shared\Chat.cshtml" />
+    <Content Include="Views\MOM\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Views\MOM\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
