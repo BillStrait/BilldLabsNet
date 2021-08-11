@@ -1,6 +1,18 @@
 ﻿body {
-    padding-top: 50px;
-    padding-bottom: 20px;
+    padding-top: 50px
+    font-family: 'Baskerville', 'Baskerville Old Face', 'Garamond', 'Times New Roman', 'serif';
+    font-size: x-large;
+    background-color: black;
+    color: whitesmoke;
+}
+
+a:visited {
+    color: #f5f5f5;
+    ;
+}
+
+a:link {
+    color: #f5f5f5;
 }
 
 /* Set padding to keep content from hitting the edges */
@@ -21,4 +33,20 @@ input,
 select,
 textarea {
     max-width: 280px;
+}
+
+#cursor {
+    width: 5px;
+    height: 15px;
+    display: inline-block;
+    background-color: white;
+    bottom: 5em;
+    right: 5em;
+    animation: blinkingCursor 500ms infinite;
+}
+
+
+@keyframes blinkingCursor {
+    from {opacity: 0;}
+    to {opacity: 100;}
 }

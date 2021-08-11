@@ -10,28 +10,28 @@
 @{
     ViewBag.Title = "Billd Labs";
 }
-<body style="background:#000000; font-family:Baskerville, 'Baskerville Old Face', Garamond, 'Times New Roman', Times, serif">
+<body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <main>
         <div>
-            <h1 style="color:white; text-align:center" ">Bill Strait</h1><br /><br /><br />
-            <h3><span style="float:left; color:white">Hire me:</span> <a href="https://www.upwork.com/freelancers/billstrait" target="_blank" rel="noreferrer noopener" style="float:right; color:white; text-decoration:underline;">UpWork</h3></a><br /><br />
-            <h3><span style="float: left; color: white">Buy a domain:</span> </span> <a href="https://www.billdlabs.com/www.secureserver.net?prog_id=573107" target="_blank" rel="noreferrer noopener" style="float:right; color:white; text-decoration:underline;">SecureServer</h3></a><br /><br />
-            <h3><span style="float: left; color: white">Look at some code:</span> </span> <a href="https://www.github.com/billstrait" target="_blank" rel="noreferrer noopener" style="float:right; color:white; text-decoration:underline">GitHub</h3></a><br /><br />
-            <h3><span style="float: left; color: white">See my resume:</span> </span> <a href="https://www.linkedin.com/in/billstrait/" target="_blank" rel="noreferrer noopener" style="float:right; color:white; text-decoration:underline;">LinkedIn</h3></a><br /><br />
-            <h3><span style="float: left; color: white">Secure chat with me:</span> </span> <a href="https://keybase.io/billdr" target="_blank" rel="noreferrer noopener" style="float:right; color:white;text-decoration:underline">Keybase</h3></a><br /><br />
-            <h3><span style="float: left; color: white">Send me an email:</span> </span> <a href="mailto:bill@billdlabs.com" target="_blank" rel="noreferrer noopener" style="float:right; color:white;text-decoration:underline">Email</h3></a><br /><br />
-            <h3><span style="float: left; color: white">Hang out:</span> </span> <a href="https://www.twitch.tv/billd" target="_blank" rel="noreferrer noopener" style="float:right; color:white;text-decoration:underline">Twitch</h3></a><br /><br />
+            <h1 style="color:white; text-align:center">Bill Strait</h1><br /><br /><br />
+            <h3><span style="float:left; color:white">Hire me:</span> <a href="https://www.upwork.com/freelancers/billstrait" target="_blank" rel="noreferrer noopener" style="float:right; color:white; text-decoration:underline;">UpWork</h3></a><br />
+            <h3><span style="float: left; color: white">Buy a domain:</span> <a href="https://www.secureserver.net/?prog_id=573107" target="_blank" rel="noreferrer noopener" style="float:right; color:white; text-decoration:underline;">SecureServer</h3></a><br />
+            <h3><span style="float: left; color: white">Look at some code:</span> <a href="https://www.github.com/billstrait" target="_blank" rel="noreferrer noopener" style="float:right; color:white; text-decoration:underline">GitHub</h3></a><br />
+            <h3><span style="float: left; color: white">See my resume:</span><a href="https://www.linkedin.com/in/billstrait/" target="_blank" rel="noreferrer noopener" style="float:right; color:white; text-decoration:underline;">LinkedIn</h3></a><br />
+            <h3><span style="float: left; color: white">Secure chat with me:</span> <a href="https://keybase.io/billdr" target="_blank" rel="noreferrer noopener" style="float:right; color:white;text-decoration:underline">Keybase</h3></a><br />
+            <h3><span style="float: left; color: white">Send me an email:</span> <a href="mailto:bill@billdlabs.com" target="_blank" rel="noreferrer noopener" style="float:right; color:white;text-decoration:underline">Email</h3></a><br />
+            <h3><span style="float: left; color: white">Hang out:</span> <a href="https://www.twitch.tv/billd" target="_blank" rel="noreferrer noopener" style="float:right; color:white;text-decoration:underline">Twitch</h3></a><br />
         </div>
-        <br />
         <br />
     </main>
 </body>
 
-<div id="console" style="color:white; font-size:x-large"></div>
-
-<div id="response"></div>
-
+<div id="theGame">
+    <div id="display"></div>
+    <div id="console"><div id="cursor"></div></div>
+    <div id="response" style="color:white"></div>
+</div>
 @section scripts {
     <!--Script references. -->
     <!--Reference the SignalR library. -->
